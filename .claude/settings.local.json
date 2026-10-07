@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\write\\\\multi-tenant\" -ErrorAction SilentlyContinue; if \\(-not \\(Test-Path \"C:\\\\Users\\\\write\\\\multi-tenant\"\\)\\) { Write-Output \"Directory does not exist\" } else { Write-Output \"Directory exists\" })",
+      "PowerShell(az account show *)",
+      "PowerShell(az ad app list *)",
+      "PowerShell(az account tenant list *)",
+      "PowerShell(az rest *)",
+      "Bash(az rest *)",
+      "Bash(az ad app permission *)",
+      "Bash(az account list *)",
+      "Bash(az ad app show *)",
+      "Bash(az ad user create *)",
+      "Bash(az account show *)",
+      "Bash(az login *)",
+      "Bash(python3 -c ' *)",
+      "PowerShell(New-Item *)",
+      "Bash(az account *)",
+      "Bash(az ad *)",
+      "Bash(npm run *)",
+      "Bash(echo \"App A PID: $!\")",
+      "Bash(echo \"App B PID: $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5174)",
+      "Bash(npx playwright *)",
+      "Bash(node verify-login.mjs)",
+      "Bash(npm init *)",
+      "Bash(npm install *)"
+    ]
+  }
+}
